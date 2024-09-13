@@ -53,8 +53,6 @@ jobs:
         id: plan
         run: terraform plan -out=tfplan
 
-      - run: echo "${{ github.event_name }}"
-
       # Optionally add an approval step for manual deployment
       - name: Terraform Plan Approval
         if: github.event_name == 'pull_request'
