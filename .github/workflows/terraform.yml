@@ -61,8 +61,7 @@ jobs:
         uses: hmarr/auto-approve-action@v4
         with:
           review-message: Terraform plan is ready for deployment
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       # Apply the Terraform changes
       - name: Terraform Apply
