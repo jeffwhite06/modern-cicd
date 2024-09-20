@@ -62,7 +62,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Lint Helm chart and output SARIF file
       - name: Run Trivy vulnerability scanner
@@ -85,7 +85,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Lint Helm chart and output SARIF file
       - name: Run Trivy vulnerability scanner
@@ -112,7 +112,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
