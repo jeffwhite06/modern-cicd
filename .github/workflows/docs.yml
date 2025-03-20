@@ -20,7 +20,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # Step 2: Set up PHP
       - name: Setup PHP
@@ -64,7 +64,7 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # Step 2: Set up Go (required for helm-docs)
       - name: Set up Go
